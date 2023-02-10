@@ -22,16 +22,6 @@ let cuadrado = numero => {
 
 greet(); //Invoke
 logGreeting(greet);
-greetMe();
+logGreeting(greetMe);
 saludo('Miguel', 'sr.');
 console.log(cuadrado(2));
-
-let logGreeting2 = (miParametro) => miParametro();
-logGreeting2(function () {
-    console.log('Hello from a function created on the fly');
-});
-
-let color="rojo";
-let talla="M";
-let modelo="Clasico";
-console.log(`Juan tiene una playera talla ${talla} de color ${color} y un modelo ${modelo}`);
