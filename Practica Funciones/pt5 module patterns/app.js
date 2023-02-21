@@ -20,3 +20,6 @@ myGreet.greet();
 
 const greet5 = require('./greet5');
 greet5.greet();
+greet5.test();
+greet5.jump();
+greet5.run();
