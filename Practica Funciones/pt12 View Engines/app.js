@@ -19,5 +19,9 @@ app.get('/api', (req,res) => {
 app.get('/person/:id', (req, res) => {
   res.render('person', { ID: req.params.id });
 });
+//NOT INCLUIDED IN PRACTICE  //NOT INCLUIDED IN PRACTICE  //NOT INCLUIDED IN PRACTICE
+app.get('/tienda', (req, res) => {
+  res.render('tienda');
+})
 
 app.listen(port);
