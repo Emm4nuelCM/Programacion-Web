@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <link href="assets/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        Hola desde el EJS
+        <h1>El numero <%= ID %> es <%= value %></h1>
+        <ul>
+            <% for (const number of numbers) { %>
+                <li><%= number %></li>
+            <% } %>
+          </ul>
+    </body>
+</html>
