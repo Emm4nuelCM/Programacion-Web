@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.tabla-personas {
+    border-collapse: collapse;
+    width: 35%;
+  }
+  
+  .tabla-personas th, .tabla-personas td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .tabla-personas th {
+    background-color: #008080;
+    color: white;
+  }

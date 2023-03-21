@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <link href="assets/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Person Name: <%= ID %></h1>
+        <h2>Mensaje: <%= Message %></h2> 
+        <lu style="list-style-type:none;">
+            <% for(let i=0; i<Times; i++) { %>
+                <li><%= ID %> <%= Message %></li>
+            <% } %>
+            </lu>
+    </body>
+</html>
