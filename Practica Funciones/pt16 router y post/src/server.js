@@ -10,6 +10,7 @@ let indexRoute= require('./routes/index');
 let studentRoute= require('./routes/student');
 let addStudentRoute= require('./routes/addStudent');
 
+//LLamado de las distintas rutas 
 app.use(personRoute);
 app.use(indexRoute);
 app.use(studentRoute);
