@@ -8,4 +8,4 @@ router.post('/addStudent', (req, res) => {
                                 tipoSangre: req.body.tipoSangre});
 })
 
-module.exports= router;
+module.exports= router; 

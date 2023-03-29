@@ -5,4 +5,4 @@ router.get('/student', (req, res) => {
     res.render('student');
 })
 
-module.exports= router;
+module.exports= router; 

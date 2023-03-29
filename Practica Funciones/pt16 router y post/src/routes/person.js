@@ -5,4 +5,4 @@ router.get('/person', (req, res) => {
     res.send('has solicitado el listado de personas');
 })
 
-module.exports= router;
+module.exports= router; 
