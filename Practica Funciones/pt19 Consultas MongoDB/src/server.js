@@ -11,7 +11,8 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended:false}));
 app.use(personsRoutes);
 
-mongoose.connect(process.env.MONGODB_URI)
+mongoose
+.connect(process.env.MONGODB_URI)
 .then(()=>console.log('Connected to TEST')) 
 .catch((error)=>console.error(error));
 
