@@ -12,7 +12,7 @@ router.get('/addPerson', (req, res) => {
     res.render('addPerson');
 });
 
-router.post('addPerson', (req, res) => {
+router.post('/addPerson', (req, res) => {
     const newPerson = Person({
         nombre: req.body.nombre,
         edad: req.body.edad,
