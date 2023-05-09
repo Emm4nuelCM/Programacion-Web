@@ -14,7 +14,7 @@ router.get('/addPerson', (req, res) => {
 
 router.get('/findById/:id', (req, res) => {
     Person.findById(req.params.id)
-    .then((myPerson) => {res.render('updatePerson', {myPerson})})
+    .then((person) => {res.render('updatePerson', {person})})
     .catch((error)=>{res.json({message:error})});
 });
 
