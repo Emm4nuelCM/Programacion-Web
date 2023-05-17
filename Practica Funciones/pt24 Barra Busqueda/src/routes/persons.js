@@ -50,4 +50,10 @@ router.get('/deletePerson/:id', (req, res) => {
     .catch((error)=>{res.json({message:error})});
 });
 
+router.post('/find', (req, res) => {
+    Person.find({ nombre: { $regex: req.body.criteria, $options: "i" } })
+    .then((Persons)=>{res.render('index', {Persons})})
+    .catch((error)=>{res.json({message:error})});
+})
+
 module.exports=router;

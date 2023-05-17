@@ -25,9 +25,9 @@
             <% Object.keys(Persons).forEach(function(prop) { %>
                 <tr>
                     <td><%= Persons[prop].nombre %></td>
-                    <td><%= Persons[prop].nss %></td>
                     <td><%= Persons[prop].edad %></td>
                     <td><%= Persons[prop].tipoSangre %></td>
+                    <td><%= Persons[prop].nss %></td>
                     <td><a href="<%= `findById/${Persons[prop]._id}` %>">Editar</a></td>
                     <td><a href="#" class="deletePersonLink">Eliminar</a></td>
                 </tr>

@@ -8,11 +8,11 @@
     <title>Lista de personas</title>
 </head>
 <body>
-    <div>
-    <input type="text" id="searchInput" placeholder="Buscar...">
-    <button onclick="search()">Buscar</button>
-    </div>
-
+    <form action="/find" method="POST">
+        <label for="criterio">Nombre:</label>
+        <input type="text" id="criteria" name="criteria">
+        <input type="submit" value="Buscar">
+    </from>
     <h1>Lista de personas</h1>
     <table>
         <thead>
@@ -29,9 +29,9 @@
             <% Object.keys(Persons).forEach(function(prop) { %>
                 <tr>
                     <td><%= Persons[prop].nombre %></td>
-                    <td><%= Persons[prop].nss %></td>
                     <td><%= Persons[prop].edad %></td>
                     <td><%= Persons[prop].tipoSangre %></td>
+                    <td><%= Persons[prop].nss %></td>
                     <td><a href="<%= `findById/${Persons[prop]._id}` %>">Editar</a></td>
                     <td><a href="<%= `deletePerson/${Persons[prop]._id}` %>" class="deletePersonLink">Eliminar</a></td>
                 </tr>
